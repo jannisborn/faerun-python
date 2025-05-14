@@ -157,7 +157,7 @@ Labels can be formatted by defining a custom `label_formatter`. If no `label_for
 label_formatter = lambda label, index, name: label.split('__')[0]
 ```
 
-This default splits the label value on `'__'` to store different labels and enable search on different values the the displayed labels. See “Searching” for details. Defining a custom label formatter is straight forward. As an example, let’s prefix each label with a string and add their index and layer name:
+This default splits the label value on `'__'` to store different labels and enable search on different values of the displayed labels. See “Searching” for details. Defining a custom label formatter is straight forward. As an example, let’s prefix each label with a string and add their index and layer name:
 
 ```python
 def custom_label_formatter(label, index, name):
